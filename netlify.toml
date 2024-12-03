@@ -1,39 +1,13 @@
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
+
 
 [[headers]]
-  for = "/"
+  for = "/*"
   [headers.values]
         Cross-Origin-Opener-Policy = "same-origin"
         Cross-Origin-Embedder-Policy = "require-corp"
         Cross-Origin-Resource-Policy = "cross-origin"
         Access-Control-Allow-Origin = "*"
 
-[[headers]]
-  for = "/mgenerate"
-  [headers.values]
-      Cross-Origin-Opener-Policy = "same-origin"
-      Cross-Origin-Embedder-Policy = "require-corp"
-      Cross-Origin-Resource-Policy = "cross-origin"
-      Access-Control-Allow-Origin = "*"
-
-[[headers]]
-  for = "/ngenerate"
-  [headers.values]
-      Cross-Origin-Opener-Policy = "same-origin"
-      Cross-Origin-Embedder-Policy = "require-corp"
-      Cross-Origin-Resource-Policy = "cross-origin"
-      Access-Control-Allow-Origin = "*"
-
-[[headers]]
-  for = "/bgenerate"
-  [headers.values]
-      Cross-Origin-Opener-Policy = "same-origin"
-      Cross-Origin-Embedder-Policy = "require-corp"
-      Cross-Origin-Resource-Policy = "cross-origin"
-      Access-Control-Allow-Origin = "*"
 
 [[headers]]
   for = "/workers/*"

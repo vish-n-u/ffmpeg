@@ -1,0 +1,17 @@
+/* 
+  Cross-Origin Isolation and Security Headers for SharedArrayBuffer
+
+  This ensures proper isolation for SharedArrayBuffer to work in the browser.
+*/
+
+# Enable Cross-Origin Isolation (for SharedArrayBuffer)
+/* 
+  Apply the headers for all routes
+*/
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: cross-origin
+  Access-Control-Allow-Origin: "*"
+
+# Cache configuration (you can adjust this based on your caching needs)
+  cache-control: public, max-age=31536000

@@ -18,13 +18,13 @@ function App() {
     // domain can be used directly.
     try{
     await ffmpeg.load({
-      coreURL: await toBlobURL(`${baseURL}/ffmpeg-core.js`, "text/javascript"),
+      coreURL: await toBlobURL(`/ffmpeg-coreM.js`, "text/javascript"),
       wasmURL: await toBlobURL(
-        `${baseURL}/ffmpeg-core.wasm`,
+        `/ffmpeg-core-M.wasm`,
         "application/wasm"
       ),
       workerURL: await toBlobURL(
-        `${baseURL}/ffmpeg-core.worker.js`,
+        `/ffmpeg-core.worker.js`,
         "text/javascript"
       ),
     });
